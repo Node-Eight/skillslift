@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <title>Jesi</title>
+</head>
+
+<body>
+  <nav>
+    <img class="brand-logo" src="" alt="Logo" />
+    <div class="openMenu"><i class="fa fa-bars"></i></div>
+    <ul class="mainNav">
+      <li><a class="nav-active" href="#">Home</a></li>
+      <li><a href="#">Course</a></li>
+      <button class="signup-btn">Sign Up</button>
+      <div class="closeMenu"><i class="fa fa-times"></i></div>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-bg">
+    <div class="hero">
+      <div class="content-left">
+        <h1 class="header-text">
+          Lorem ipsum dolor sit <span class="animatedTxt"></span>
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem
+          repudiandae doloribus adipisci, quas libero delectus eaque.
+          Voluptatum suscipit, corrupti praesentium blanditiis, maxime eum
+          repudiandae laboriosam alias hic dolorem libero a maiores
+          voluptatibus tenetur? Error, facere?
+        </p>
+
+        <button class="getStarted-btn">Get Started</button>
+      </div>
+      <div class="content-right">
+        <div class="imgContainer">
+          <img src="./images/img-right.png" alt="img" />
+        </div>
+      </div>
+    </div>
+    
+    <div class="sm-hero">
+      <div class="text-overlay">
+        <h2 class="headertxt">
+          Lorem ipsum dolor sit <span class="animatedTxt"></span>
+        </h2>
+        <p class="sm-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptas iure alias id
+          doloremque
+          necessitatibus aut vel, ex sit molestiae.</p>
+        <button class="sm-btn">Get Started</button>
+      </div>
+      <div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== Courses for Smaller Screen ========= -->
+  <section class="sm-courses">
+    <h3 class="smHeadertxt">Courses</h3>
+    <h2 class="sm-headertxt">Top<span>Courses</span></h2>
+
+    <!-- First Row -->
+    <div class="sm-CourseCard">
+      <div class="smCardContainer">
+        <div class="smCardImg">
+          <img src="./images/smImg.png" alt="Sm-Image">
+        </div>
+        <div class="sm-courseBtn">
+          <a href="#">Digital Marketing</a>
+          <i class="fa-sharp fa-solid fa-chevron-right "></i>
+        </div>
+      </div>
+      <!-- 2nd -->
+      <div class="smCardContainer">
+        <img src="./images/smImg.png" alt="Sm-Image">
+        <div class="sm-courseBtn">
+          <a href="#">Digital Marketing</a>
+          <i class="fa-sharp fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Row -->
+    <div class="sm-CourseCard">
+      <div class="smCardContainer">
+        <div class="smCardImg">
+          <img src="./images/smImg.png" alt="Sm-Image">
+        </div>
+        <div class="sm-courseBtn">
+          <a href="#">Digital Marketing</a>
+          <i class="fa-sharp fa-solid fa-chevron-right "></i>
+        </div>
+      </div>
+      <!-- 2nd -->
+      <div class="smCardContainer">
+        <img src="./images/smImg.png" alt="Sm-Image">
+        <div class="sm-courseBtn">
+          <a href="#">Digital Marketing</a>
+          <i class="fa-sharp fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
+    </div>
+
+    <button class="sm-btn">View More Courses</button>
+  </section>
+
+  <!-- ================ Course Section for larger screen ============= -->
+  <section class="courses">
+    <h3 class="smHeadertxt">Courses</h3>
+    <div class="bgHeadertxt">
+      <h2 class="headertxt">Choose Our Top<span>Courses</span></h2>
+      <div class="tabs">
+        <button class="active-btn tablink" id="defaultOpen" onclick="showContent(0)"> See
+          All</button>
+        <button class="tablink" onclick="showContent(1)""> Marketing</button>
+      <button class=" tablink" onclick="showContent(2)"> Design</button>
+        <button class="tablink" onclick="showContent(3)"> Software</button>
+      </div>
+    </div>
+
+
+    <!-- See All -->
+    <div class="tabContent" id="see-all">
+      <div class="courseCard">
+        <!-- First card -->
+        <div class="cardContainer">
+          <div class="tag-btn">
+            <span>Digital Marketing</span>
+          </div>
+          <div class="cardImg">
+            <img src="./images/img1.png" alt="img" />
+          </div>
+          <div class="cardContent">
+            <h4>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Consectetur ipsum mollitia inventore, minima sed ab?
+            </h4>
+          </div>
+          <div class="view-link">
+            <span>View Course</span>
+            <i class="fa fa-arrow-right link-arrow"></i>
+          </div>
+        </div>
+        <!-- Second Card-->
+        <div class="cardContainer">
+          <div class="tag-btn">
+            <span>Digital Marketing</span>
+          </div>
+          <div class="cardImg">
+            <img src="./images/img1.png" alt="img" />
+          </div>
+          <div class="cardContent">
+            <h4>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Consectetur ipsum mollitia inventore, minima sed ab?
+            </h4>
+          </div>
+          <div class="view-link">
+            <span>View Course</span>
+            <i class="fa fa-arrow-right link-arrow"></i>
+          </div>
+        </div>
+        <!-- Third Card-->
+        <div class="cardContainer">
+          <div class="tag-btn">
+            <span>Digital Marketing</span>
+          </div>
+          <div class="cardImg">
+            <img src="./images/img1.png" alt="img" />
+          </div>
+          <div class="cardContent">
+            <h4>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Consectetur ipsum mollitia inventore, minima sed ab?
+            </h4>
+          </div>
+          <div class="view-link">
+            <span>View Course</span>
+            <i class="fa fa-arrow-right link-arrow"></i>
+          </div>
+        </div>
+        <!-- Fourth card -->
+        <div class="cardContainer">
+          <div class="tag-btn">
+            <span>Digital Marketing</span>
+          </div>
+          <div class="cardImg">
+            <img src="./images/img1.png" alt="img" />
+          </div>
+          <div class="cardContent">
+            <h4>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Consectetur ipsum mollitia inventore, minima sed ab?
+            </h4>
+          </div>
+          <div class="view-link">
+            <span>View Course</span>
+            <i class="fa fa-arrow-right link-arrow"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="courseCard">
+
+        <div class="cardContainer">
+          <div class="tag-btn">
+            <span>Digital Marketing</span>
+          </div>
+          <div class="cardImg">
+            <img src="./images/img1.png" alt="img" />
+          </div>
+          <div class="cardContent">
+            <h4>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Consectetur ipsum mollitia inventore, minima sed ab?
+            </h4>
+          </div>
+          <div class="view-link">
+            <span>View Course</span>
+            <i class="fa fa-arrow-right link-arrow"></i>
+          </div>
+        </div>
+
+        <div class="cardContainer">
+          <div class="tag-btn">
+            <span>Digital Marketing</span>
+          </div>
+          <div class="cardImg">
+            <img src="./images/img1.png" alt="img" />
+          </div>
+          <div class="cardContent">
+            <h4>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Consectetur ipsum mollitia inventore, minima sed ab?
+            </h4>
+          </div>
+          <div class="view-link">
+            <span>View Course</span>
+            <i class="fa fa-arrow-right link-arrow"></i>
+          </div>
+        </div>
+
+        <div class="cardContainer">
+          <div class="tag-btn">
+            <span>Digital Marketing</span>
+          </div>
+          <div class="cardImg">
+            <img src="./images/img1.png" alt="img" />
+          </div>
+          <div class="cardContent">
+            <h4>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Consectetur ipsum mollitia inventore, minima sed ab?
+            </h4>
+          </div>
+          <div class="view-link">
+            <span>View Course</span>
+            <i class="fa fa-arrow-right link-arrow"></i>
+          </div>
+        </div>
+        <!-- Fourth card -->
+        <div class="cardContainer">
+          <div class="tag-btn">
+            <span>Digital Marketing</span>
+          </div>
+          <div class="cardImg">
+            <img src="./images/img1.png" alt="img" />
+          </div>
+          <div class="cardContent">
+            <h4>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Consectetur ipsum mollitia inventore, minima sed ab?
+            </h4>
+          </div>
+          <div class="view-link">
+            <span>View Course</span>
+            <i class="fa fa-arrow-right link-arrow"></i>
+          </div>
+        </div>
+      </div>
+      <button class="cta">View All Courses</button>
+    </div>
+
+    <!-- Marketing Tab -->
+    <div class="tabContent" id="marketing">
+      <div class="courseCard">
+        <!-- 1st course-card -->
+        <div class="cardContainer">
+          <div class="tag-btn">
+            <span>Digital Marketing</span>
+          </div>
+          <div class="cardImg">
+            <img src="./images/img1.png" alt="img" />
+          </div>
+          <div class="cardContent">
+            <h4>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Consectetur ipsum mollitia inventore, minima sed ab?
+            </h4>
+          </div>
+          <div class="view-link">
+            <span>View Course</span>
+            <i class="fa fa-arrow-right link-arrow"></i>
+          </div>
+        </div>
+        <!-- 2nd course-card -->
+        <div class="cardContainer">
+          <div class="tag-btn">
+            <span>Digital Marketing</span>
+          </div>
+          <div class="cardImg">
+            <img src="./images/img1.png" alt="img" />
+          </div>
+          <div class="cardContent">
+            <h4>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Consectetur ipsum mollitia inventore, minima sed ab?
+            </h4>
+          </div>
+          <div class="view-link">
+            <span>View Course</span>
+            <i class="fa fa-arrow-right link-arrow"></i>
+          </div>
+        </div>
+        <!-- 3rd course-card -->
+        <div class="cardContainer">
+          <div class="tag-btn">
+            <span>Digital Marketing</span>
+          </div>
+          <div class="cardImg">
+            <img src="./images/img1.png" alt="img" />
+          </div>
+          <div class="cardContent">
+            <h4>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Consectetur ipsum mollitia inventore, minima sed ab?
+            </h4>
+          </div>
+          <div class="view-link">
+            <span>View Course</span>
+            <i class="fa fa-arrow-right link-arrow"></i>
+          </div>
+        </div>
+      </div>
+      <button class="cta">View All Courses</button>
+    </div>
+
+    <!-- Design Tab -->
+    <div class="tabContent" id="design">
+      <div class="courseCard">
+        <!-- 1st course-card -->
+        <div class="cardContainer">
+          <div class="tag-btn">
+            <span>Digital Marketing</span>
+          </div>
+          <div class="cardImg">
+            <img src="./images/img1.png" alt="img" />
+          </div>
+          <div class="cardContent">
+            <h4>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Consectetur ipsum mollitia inventore, minima sed ab?
+            </h4>
+          </div>
+          <div class="view-link">
+            <span>View Course</span>
+            <i class="fa fa-arrow-right link-arrow"></i>
+          </div>
+        </div>
+        <!-- 2nd course-card -->
+        <div class="cardContainer">
+          <div class="tag-btn">
+            <span>Digital Marketing</span>
+          </div>
+          <div class="cardImg">
+            <img src="./images/img1.png" alt="img" />
+          </div>
+          <div class="cardContent">
+            <h4>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Consectetur ipsum mollitia inventore, minima sed ab?
+            </h4>
+          </div>
+          <div class="view-link">
+            <span>View Course</span>
+            <i class="fa fa-arrow-right link-arrow"></i>
+          </div>
+        </div>
+
+      </div>
+      <button class="cta">View All Courses</button>
+    </div>
+
+    <!-- Software Tab -->
+    <div class="tabContent" id="software">
+      <div class="courseCard">
+        <!-- 1st course-card -->
+        <div class="cardContainer">
+          <div class="tag-btn">
+            <span>Digital Marketing</span>
+          </div>
+          <div class="cardImg">
+            <img src="./images/img1.png" alt="img" />
+          </div>
+          <div class="cardContent">
+            <h4>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Consectetur ipsum mollitia inventore, minima sed ab?
+            </h4>
+          </div>
+          <div class="view-link">
+            <span>View Course</span>
+            <i class="fa fa-arrow-right link-arrow"></i>
+          </div>
+        </div>
+      </div>
+      <button class="cta">View All Courses</button>
+    </div>
+
+
+
+  </section>
+
+  <!-- About Section -->
+  <section class="about-bg">
+    <div class="content-main">
+      <div class="about-content-left">
+        <h3 class="smHeadertxt">About Jesi</h3>
+        <h2 class="headertxt">
+          The Place Where Dreams are <span>Achieved</span>
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quo
+          soluta laborum omnis maiores culpa quibusdam necessitatibus quos,
+          numquam eius iure cumque autem a eveniet! Accusamus minus id
+          repellat iste ex alias esse illo praesentium.
+        </p>
+        <div class="our-mission">
+          <img src="./images/mission-icon.png" alt="icon" />
+          <h3 class="smTitle">Our Mission</h3>
+          <span class="smText">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reprehenderit hic mollitia deserunt adipisci veniam magni quia
+            quis dicta ratione corporis!</span>
+        </div>
+        <div class="our-vision">
+          <img src="./images/vision-icon.png" alt="icon" />
+          <h3 class="smTitle">Our Vision</h3>
+          <span class="smText">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reprehenderit hic mollitia deserunt adipisci veniam magni quia
+            quis dicta ratione corporis!</span>
+        </div>
+        <button class="read-more">Read More</button>
+      </div>
+      <div class="about-content-right">
+        <div class="firstImg">
+          <img src="./images/firsImg.png" alt="First Image" />
+        </div>
+        <div class="secondImg">
+          <img src="./images/secondImg.png" alt="Second Image" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ============ Why choose Us ======= -->
+  <section class="why-choose-bg">
+    <div class="why-choose">
+      <div class="why-choose-content-left">
+        <h3 class="smHeadertxt">why choose Jesi</h3>
+        <h2 class="headertxt">
+          Grow Your Skills, Define Your <span>Bright Future</span>
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quo
+          soluta laborum omnis maiores culpa quibusdam necessitatibus quos,
+          numquam eius iure cumque autem a eveniet! Accusamus minus id
+          repellat iste ex alias esse illo praesentium.
+        </p>
+
+        <button class="read-more">Read More</button>
+      </div>
+      <div class="why-choose-content-right">
+        <div class="chooseImg">
+          <img src="./images/chooseImg.png" alt="Image" />
+        </div>
+        <div class="tag1">
+          <div class="dot-color"></div>
+          <span>Get 100% Scholarship</span>
+        </div>
+        <div class="tag2">
+          <div class="dot-color"></div>
+          <span>Employability</span>
+        </div>
+        <div class="tag3">
+          <div class="dot-color"></div>
+          <span>Learn Anything</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ================== Our Partner Section ==================== -->
+  <section class="our-partners">
+    <h3 class="smHeadertxt">Partners</h3>
+    <h2 class="headertxt">Our <span>Partners</span></h2>
+    <div class="mainCard">
+
+      <!-- First Card -->
+      <div class="cardContainer">
+        <div class="cardImg">
+          <img src="./images/img1.png" alt="img" />
+        </div>
+        <div class="cardContent">
+          <h2 class="partner-name">Botnar Foundation</h2>
+          <h4 class="partner-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Consectetur ipsum mollitia inventore, minima sed ab?
+          </h4>
+        </div>
+        <button class="apply-btn">Read More</button>
+
+      </div>
+      <!-- Second Card -->
+      <div class="cardContainer">
+        <div class="cardImg">
+          <img src="./images/img1.png" alt="img" />
+        </div>
+        <div class="cardContent">
+          <h2 class="partner-name">Become a Partner</h2>
+          <h4 class="partner-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Consectetur ipsum mollitia inventore, minima sed ab?
+          </h4>
+        </div>
+        <button class="apply-btn">Apply Now</button>
+
+      </div>
+
+
+    </div>
+  </section>
+
+
+
+
+
+  <!-- ================== Event Section ==================== -->
+  <!-- <section class="join-us">
+    <h3 class="smHeadertxt">join us</h3>
+    <h2 class="headertxt">Upcoming <span>Events</span></h2>
+    <div class="eventMain">
+      <div class="eventCard">
+        <div class="eventImg">
+          <img src="./images/eventImg1.png" alt="img" />
+        </div>
+        <div class="eventContent">
+          <h2 class="event-name">Last Friday Hangout</h2>
+          <div class="event-date">
+            <i class="fa fa-calendar dateIcon"></i>
+            <span>June 30th 2023</span>
+          </div>
+          <div class="event-location">
+            <i class="fa fa-location locationIcon"></i>
+            <span>Node Eight Premises</span>
+          </div>
+          <div class="event-time">
+            <i class="fa fa-clock timeIcon"></i>
+            <span>6pm</span>
+          </div>
+        </div>
+        <button class="apply-btn">Apply Now</button>
+      </div>
+      
+      <div class="eventCard">
+        <div class="eventImg">
+          <img src="./images/eventImg1.png" alt="img" />
+        </div>
+        <div class="eventContent">
+          <h2 class="event-name">Event Name</h2>
+          <div class="event-date">
+            <i class="fa fa-calendar dateIcon"></i>
+            <span>Event's Date</span>
+          </div>
+          <div class="event-location">
+            <i class="fa fa-location locationIcon"></i>
+            <span>Event's Location</span>
+          </div>
+          <div class="event-time">
+            <i class="fa fa-clock timeIcon"></i>
+            <span>6pm</span>
+          </div>
+        </div>
+        <button class="apply-btn">Apply Now</button>
+      </div>
+     
+      <div class="eventCard">
+        <div class="eventImg">
+          <img src="./images/eventImg1.png" alt="img" />
+        </div>
+        <div class="eventContent">
+          <h2 class="event-name">Event Name</h2>
+          <div class="event-date">
+            <i class="fa fa-calendar dateIcon"></i>
+            <span>Event's Date</span>
+          </div>
+          <div class="event-location">
+            <i class="fa fa-location locationIcon"></i>
+            <span>Event's Location</span>
+          </div>
+          <div class="event-time">
+            <i class="fa fa-clock timeIcon"></i>
+            <span>6pm</span>
+          </div>
+        </div>
+
+        <button class="apply-btn">Apply Now</button>
+      </div>
+      
+    </div>
+  </section> -->
+
+  <!-- ================ Blog Section ======================== -->
+  <section class="our-blog">
+    <h3 class="smHeadertxt">Blogs & Articles </h3>
+    <h2 class="headertxt">Our Latest<span>Blogs</span></h2>
+    <div class="blog-bg">
+      <div class="blogMain">
+
+        <!-- 1st Blog Card -->
+        <div class="blogCard">
+          <div class="blogImg">
+            <img src="./images/blogImg1.png" alt="img" />
+          </div>
+          <div class="blog-admin-date">
+            <div class="blog-admin">
+              <i class="fa fa-user-alt adminIcon"></i>
+              <span>Admin</span>
+            </div>
+            <div class="blog-date">
+              <i class="fa fa-clock blog-dateIcon"></i>
+              <span>June 30th 2023</span>
+            </div>
+          </div>
+          <div class="blogContent">
+            <p class="blogtxt">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam facilis temporibus earum inventore
+              placeat
+              culpa iure aspernatur sed fugiat! Voluptatibus rerum placeat repellat recusandae cupiditate!
+            </p>
+          </div>
+          <div class="readMore">
+            <a href="#">Read More</a>
+          </div>
+        </div>
+        <!-- 2nd Blog Card -->
+        <div class="blogCard">
+          <div class="blogImg">
+            <img src="./images/blogImg1.png" alt="img" />
+          </div>
+          <div class="blog-admin-date">
+            <div class="blog-admin">
+              <i class="fa fa-user-alt adminIcon"></i>
+              <span>Admin</span>
+            </div>
+            <div class="blog-date">
+              <i class="fa fa-clock blog-dateIcon"></i>
+              <span>June 30th 2023</span>
+            </div>
+          </div>
+          <div class="blogContent">
+            <p class="blogtxt">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam facilis temporibus earum inventore
+              placeat
+              culpa iure aspernatur sed fugiat! Voluptatibus rerum placeat repellat recusandae cupiditate!
+            </p>
+          </div>
+          <div class="readMore">
+            <a href="#">Read More</a>
+          </div>
+        </div>
+        <!-- 3rd Blog Card -->
+        <div class="blogCard">
+          <div class="blogImg">
+            <img src="./images/blogImg1.png" alt="img" />
+          </div>
+          <div class="blog-admin-date">
+            <div class="blog-admin">
+              <i class="fa fa-user-alt adminIcon"></i>
+              <span>Admin</span>
+            </div>
+            <div class="blog-date">
+              <i class="fa fa-clock blog-dateIcon"></i>
+              <span>June 30th 2023</span>
+            </div>
+          </div>
+          <div class="blogContent">
+            <p class="blogtxt">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam facilis temporibus earum inventore
+              placeat
+              culpa iure aspernatur sed fugiat! Voluptatibus rerum placeat repellat recusandae cupiditate!
+            </p>
+          </div>
+          <div class="readMore">
+            <a href="#">Read More</a>
+          </div>
+        </div>
+        <!-- 4th Blog Card -->
+        <div class="blogCard">
+          <div class="blogImg">
+            <img src="./images/blogImg1.png" alt="img" />
+          </div>
+          <div class="blog-admin-date">
+            <div class="blog-admin">
+              <i class="fa fa-user-alt adminIcon"></i>
+              <span>Admin</span>
+            </div>
+            <div class="blog-date">
+              <i class="fa fa-clock blog-dateIcon"></i>
+              <span>June 30th 2023</span>
+            </div>
+          </div>
+          <div class="blogContent">
+            <p class="blogtxt">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam facilis temporibus earum inventore
+              placeat
+              culpa iure aspernatur sed fugiat! Voluptatibus rerum placeat repellat recusandae cupiditate!
+            </p>
+          </div>
+          <div class="readMore">
+            <a href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="all-blogs cta">All Blogs</button>
+  </section>
+  <!-- ============= Footer Section ========== -->
+  <footer>
+    <div class="footerContent">
+      <div class="col-1">
+        <div class="footer-logo">
+          <img src="" alt="footerImage">
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, modi! Soluta odit voluptatibus vitae ea!</p>
+        <div class="socialMedia">
+          <ul>
+            <li><a href="#">
+                <i class="fa-brands fa-facebook fa-2x social-icon"></i>
+              </a></li>
+            <a href="#">
+              <li><i class="fa-brands fa-twitter fa-2x social-icon"></i>
+            </a></li>
+            <a href="#">
+              <li><i class="fa-brands fa-instagram fa-2x social-icon"></i>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-2">
+        <h3 class="header-tags">Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Scholarships</a></li>
+          <li><a href="#">Careet Path</a></li>
+          <li><a href="#">Blogs & Articles</a></li>
+
+
+        </ul>
+      </div>
+      <div class="col-3">
+        <h3 class="header-tags">Legal</h3>
+        <ul>
+          <li><a href="#">Term of Use</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Scholarships</a></li>
+          <li><a href="#">Careet Path</a></li>
+          <li><a href="#">Blogs & Articles</a></li>
+        </ul>
+
+      </div>
+      <div class="col-4">
+        <h3 class="header-tags">Newsletter</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, architecto.</p>
+        <input type="email" class="user-email" placeholder="Enter your email">
+        <button class="subcribe-btn">Subscribe Now</button>
+      </div>
+    </div>
+    <p>&copy; 2023 Jesi. All rights reserved.</p>
+  </footer>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
